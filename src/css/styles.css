@@ -164,14 +164,12 @@ div.popup-menu {
 	z-index:1;
 	background: linear-gradient(180deg, rgb(190 120 0), rgb(0 0 0));
 }
-a.popup-menu 
-{
-	
-}
+
 #close-menu-button {
     position: absolute;
-    top: 2vh;
-    right: 2vw;
+    top: 4vw;
+    right: 4vw;
+	font-size: 4vw;
 	color: white;
     font-weight: 1000;
     border: none;
@@ -186,6 +184,7 @@ a.scroll-button {
 	position: relative;
 	text-decoration: none;
 	top: 20vh;
+	margin-bottom: 10vh;
 	z-index:3;
 }
 

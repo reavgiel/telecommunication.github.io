@@ -17,7 +17,7 @@ window.onload = function() {
 		window.addEventListener('resize', invision);
 
 		function invision() {
-			
+			$("a.scroll-button").css("font-size",12+24*((window.innerWidth-360)/(1280-360)));
 			if (window.innerWidth <= 1280 || window.innerHeight/window.innerWidth>0.7) {
 				$('.menu-button').show();
 				if(ind == false){$('.popup-menu').show();}
