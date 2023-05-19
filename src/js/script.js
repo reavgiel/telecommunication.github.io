@@ -18,16 +18,18 @@ window.onload = function() {
 
 		function invision() {
 			
-			if (window.innerWidth <= 1080 || window.innerHeight/window.innerWidth>0.7) {
+			if (window.innerWidth <= 1280 || window.innerHeight/window.innerWidth>0.7) {
 				$('.menu-button').show();
 				if(ind == false){$('#popup-menu').show();}
 				$('#invision').hide();
+				if(ind == false){$('.block').hide();}
 			} else {
 				$('.menu-button').hide();
 				$('#popup-menu').hide();
 				$('#invision').show();
+				if(ind == false){$('.block').show();}
 			}
-			if (window.innerWidth< window.innerHeight){$("body").css("font-size","2vw");}else{$("body").css("font-size","2vh");}
+			
 		}
 		function createMenuButton() {
 			let menuButton = $('<button class="menu-button"></button>');
