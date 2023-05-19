@@ -20,12 +20,12 @@ window.onload = function() {
 			
 			if (window.innerWidth <= 1280 || window.innerHeight/window.innerWidth>0.7) {
 				$('.menu-button').show();
-				if(ind == false){$('#popup-menu').show();}
+				if(ind == false){$('.popup-menu').show();}
 				$('#invision').hide();
 				if(ind == false){$('.block').hide();}
 			} else {
 				$('.menu-button').hide();
-				$('#popup-menu').hide();
+				$('.popup-menu').hide();
 				$('#invision').show();
 				if(ind == false){$('.block').show();}
 			}
@@ -41,7 +41,7 @@ window.onload = function() {
 
 			menuButton.click(function() {
 				ind = !ind;
-				$('#popup-menu').show();
+				$('.popup-menu').show();
 				$('.block').hide();
 			});
 
@@ -50,14 +50,14 @@ window.onload = function() {
 		}
 		
 		$('#close-menu-button').click(function() {
-			$('#popup-menu').hide();
+			$('.popup-menu').hide();
 			$('.block').show();
 			ind = !ind;
 		});
 		  // handle click event on scroll buttons
 		  $(".scroll-button").click(function() {
 			  if(ind == false){
-				$('#popup-menu').hide();
+				$('.popup-menu').hide();
 				$('.block').show();
 				ind = !ind;
 			  }
