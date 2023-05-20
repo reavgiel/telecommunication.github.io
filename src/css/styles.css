@@ -21,27 +21,21 @@ h1,h2,h3,h4,h5,h6
 }
 .wrapper
 {
-	min-height: 100%;
 	overflow: hidden;
 }
-html,body 
+body 
 {
-	line-height: 1;
 	color: orange;
 	text-shadow: 2px 2px 2px rgb(0 0 255);
 	font-size: 16px;
 	font-weight: 800;
 	font-family: "Fira Sans", sans-serif;
-	height: 100%;
-	width: 100vw;
 	min-width: 1280px;
 }
 
 .container
 {
 	max-width: 1280px;
-	width: 1280px;
-	height: 100%;
 	margin: 0px auto;
 }
 p,li
@@ -54,9 +48,11 @@ p,li
 {
 	height:max-content;
 	width: 100%;
+	min-width: 1280px;
 }
 #block_1
 {
+
 	height:max-content;
 	width: 100%;
 	background-image: url(../../src/images/1.jpg);
@@ -136,76 +132,11 @@ li.inline
 	float: right;
 	font-size: 29px;
 	position: relative;
-	top: -8px;
+	top: -17px;
 	
-}
-#social-icons i {
 }
 #social-icons a:hover {
     box-shadow: 1vw 0.1vw 2vw rgba(10, 10, 10, 0.5);
-}
-#menu-button-container {
-    position: fixed;
-    top: 17px;
-    right: 30px;
-}
-
-.menu-button {
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-}
-
-.menu-button-line {
-    width: 40px;
-    height: 7px;
-    background-color: orange;
-    margin: 3px 0;
-}
-
-div.popup-menu {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-	z-index:1;
-	background: linear-gradient(180deg, rgb(190 120 0), rgb(0 0 0));
-}
-
-#close-menu-button {
-    position: absolute;
-    top: 4vw;
-    right: 4vw;
-	font-size: 4vw;
-	color: white;
-    font-weight: 1000;
-    border: none;
-	background: transparent;
-}
-a.scroll-button { 
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	background-color: transparent;
-	color: orange; 
-	position: relative;
-	text-decoration: none;
-	top: 20vh;
-	margin-bottom: 10vh;
-	z-index:3;
-}
-
-.scroll-button:hover 
-{ 	
-	color: transparent;
-	transition: background-position 0.5s ease;
-	background-image: linear-gradient(90deg, orange, black);
-	background-clip: text;
-	-webkit-background-clip: text; /* Для підтримки веб-переглядачів на основі WebKit */
-	
-	
-	background-position: right;
 }
 .text-block
 {	
