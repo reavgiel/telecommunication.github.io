@@ -122,7 +122,7 @@ ul.header
 li.inline
 {
 	display: inline-block;
-	width: max-content;
+	width: 213px;
 	position: relative;
 	top: 15px;
 	text-indent: none;
