@@ -80,7 +80,8 @@ p,li
 }
 .head
 {
-	position:fixed;
+	position:absolute;
+	min-width: 1280px;
 	width: 100%;
 	height: max-content;
 	background-color: black;

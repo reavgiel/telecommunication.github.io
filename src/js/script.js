@@ -26,6 +26,7 @@ window.onload = function() {
 			clickable: true,
 		}
 	});
-		$(".fa-instagram").mouseenter(function() {$(this).css("text-shadow", "1vh 0.1vh 2vh red");}).mouseleave(function(){$(this).css("text-shadow", "");});
-		createMenuButton();
+	$(window).scroll(function(){
+		$(".head").css("top",$(this).scrollTop() + "px");
+	});
   };
