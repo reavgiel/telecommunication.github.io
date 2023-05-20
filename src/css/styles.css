@@ -30,7 +30,6 @@ body
 	font-size: 16px;
 	font-weight: 800;
 	font-family: "Fira Sans", sans-serif;
-	min-width: 1280px;
 }
 
 .container
@@ -48,7 +47,7 @@ p,li
 {
 	height:max-content;
 	width: 100%;
-	min-width: 1280px;
+	min-width: 300px;
 }
 #block_1
 {
@@ -78,10 +77,18 @@ p,li
 	background: linear-gradient(180deg, rgb(140 70 0), rgb(0 0 0));
 	height: 100vh;
 }
-.head
+/*.head
 {
 	position:absolute;
 	min-width: 1280px;
+	width: 100%;
+	height: max-content;
+	background-color: black;
+	z-index: 50;
+}*/
+.head
+{
+	position:fixed;
 	width: 100%;
 	height: max-content;
 	background-color: black;
@@ -194,6 +201,7 @@ p.aling-center
 	margin: 0px auto;
     position: relative;
     display: flex;
+	flex-wrap: wrap; 
     justify-content: space-between;
 }
 .container_2 .card {
@@ -211,6 +219,7 @@ p.aling-center
     position: relative;
     background: #333;
     display: flex;
+	flex: 0 0 33%;
     justify-content: center;
     align-items: center;
     z-index: 1;
@@ -247,6 +256,7 @@ p.aling-center
     position: relative;
     background: linear-gradient(to left, rgb(209 121 12 / 71%), rgb(84 57 27), rgb(0 0 0 / 82%));
     display: flex;
+	flex: 0 0 33%;
     justify-content: center;
     align-items: center;
     padding: 20px;
@@ -499,5 +509,182 @@ p.aling-center
     height: 11px;
     width: 30px;
   }
+}
+ footer 
+ {
+	background-color: #0a0a0a;
+	padding: 20px;
+	text-align: center;
+}
+
+footer p 
+{
+	color: #888;
+}
+
+footer a 
+{
+	color: #fff7f7e3;
+	text-decoration: none;
+}
+@media screen and (max-width: 768px) and (min-width: 301px) {
+	.container{
+		max-width: 100%;
+	}
+	body,.blog-slider__text{
+		font-size: 12px;
+	}
+	h1, h1.header-text, h2, h3{
+		font-size: 20px;
+	}
+	.block_line {
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: column-reverse;
+		align-content: center;
+	}
+	.block_img
+	{
+		height: max-content;
+		width: 100%;
+	}
+	.block_img img
+	{
+		height: max-content;
+		width: max-content;
+	}
+	ul.header
+	{
+		display: flex;
+		flex-direction: column;
+		justify-content: space-evenly;
+		width: 60vw;
+		margin: 30vh 20vw;
+	}
+	li.inline{
+		font-size:1.4em;
+		width: 100%;
+		text-align: center;
+		position: relative;
+		margin-bottom: 5vh;
+	}
+	#social-icons {
+		position: relative;
+		float: inherit;
+		font-size: 29px;
+		left: 3.6em;
+		top: 0.2em;
+	}
+  }
+@media screen and (max-width: 300px){
+	ul.header
+	{
+		display: flex;
+		flex-direction: column;
+		justify-content: space-evenly;
+		width: 60vw;
+		margin: 30vh 20vw;
+	}
+	li.inline{
+		font-size:1.4em;
+		width: 100%;
+		text-align: center;
+		position: relative;
+		margin-bottom: 5vh;
+	}
+	#social-icons {
+		position: relative;
+		float: inherit;
+		font-size: 29px;
+		left: 3.6em;
+		top: 0.2em;
+	}
+	.container{
+		max-width: 100%;
+	}
+	body,.blog-slider__text{
+		font-size: 10px;
+	}
+	h1,h1.header-text, h2, h3{
+		font-size: 18px;
+	}
+	.block_line {
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: column-reverse;
+		align-content: center;
+	}
+	.block_img
+	{
+		height: max-content;
+		width: 100%;
+	}
+	.block_img img
+	{
+		height: max-content;
+		width: max-content;
+	}
+}
+@media screen and (max-width: 1280px){
+	span#invision{
+		height: 100vh;
+		width: 100vw;
+		display: none;
+		position: fixed;
+		background: black;
+		padding: 2em;
+		right: 0;
+		z-index: 0;
+	}
+	ul.header
+	{
+		display: flex;
+		flex-direction: column;
+		justify-content: space-evenly;
+		width: 60vw;
+		margin: 30vh 20vw;
+	}
+	li.inline{
+		font-size:1.4em;
+		width: 100%;
+		text-align: center;
+		position: relative;
+		margin-bottom: 5vh;
+	}
+	#social-icons {
+		position: relative;
+		float: inherit;
+		font-size: 29px;
+		left: 3.6em;
+		top: 0.2em;
+	}
+	li.inline{display: block;}
+	/*span#invision{
+		display: none;
+	}*/
+	#menu-button-container {
+		position: fixed;
+		top: 3vh;
+		font-size: 0.5em;
+		right: 5vw;
+	}
+	
+	.menu-button {
+		background-color: transparent;
+		border: none;
+		cursor: pointer;
+	}
+	
+	.menu-button-line {
+		width: 3em;
+		height: 0.3em;
+		background-color: orange;
+		margin: 1vh 0;
+	}
+}
+@media screen and (min-width: 1281px){
+	#menu-button-container{
+		display: none;
+	}
 }
 

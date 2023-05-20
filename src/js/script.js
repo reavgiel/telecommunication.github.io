@@ -26,7 +26,31 @@ window.onload = function() {
 			clickable: true,
 		}
 	});
-	$(window).scroll(function(){
-		$(".head").css("top",$(this).scrollTop() + "px");
-	});
+	var score = true;
+	function createMenuButton() {
+		let menuButton = $('<button class="menu-button"></button>');
+
+		for (let i = 0; i < 3; i++) {
+			let menuButtonLine = $('<div class="menu-button-line"></div>');
+			menuButton.append(menuButtonLine);
+		}
+		menuButton.click(function() {
+			score = !score;
+			if(score == false){
+				$("span#invision").show();
+				$("span#invision").animate({ top: '+=100vh' }, 500);
+				
+			}else{
+				$("span#invision").animate({ top: '-=100vh' }, 500);
+				$("span#invision").hide();
+			}
+		});
+
+		$('#menu-button-container').append(menuButton);
+	}
+	createMenuButton();
+	$("span#invision").animate({ top: '-=100vh' }, 5);
+//	$(window).scroll(function(){
+//		$(".head").css("top",$(this).scrollTop() + "px");
+//	});
   };
