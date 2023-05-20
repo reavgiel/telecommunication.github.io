@@ -569,13 +569,18 @@ footer a
 		margin-bottom: 5vh;
 	}
 	#social-icons {
-		position: relative;
+		position: fixed;
 		float: inherit;
 		font-size: 29px;
-		left: 3.6em;
-		top: 0.2em;
+		left: 48vw;
+		top: 80vh;
 	}
   }
+@media screen and (max-width: 600px){
+	.container_2{
+		justify-content: center;
+	}
+}
 @media screen and (max-width: 300px){
 	ul.header
 	{
@@ -593,11 +598,11 @@ footer a
 		margin-bottom: 5vh;
 	}
 	#social-icons {
-		position: relative;
+		position: fixed;
 		float: inherit;
 		font-size: 29px;
-		left: 3.6em;
-		top: 0.2em;
+		left: 48vw;
+		top: 80vh;
 	}
 	.container{
 		max-width: 100%;
@@ -652,11 +657,11 @@ footer a
 		margin-bottom: 5vh;
 	}
 	#social-icons {
-		position: relative;
+		position: fixed;
 		float: inherit;
 		font-size: 29px;
-		left: 3.6em;
-		top: 0.2em;
+		left: 48vw;
+		top: 80vh;
 	}
 	li.inline{display: block;}
 	/*span#invision{

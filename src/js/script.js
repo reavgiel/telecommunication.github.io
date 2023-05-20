@@ -37,6 +37,7 @@ window.onload = function() {
 		menuButton.click(function() {
 			score = !score;
 			if(score == false){
+				
 				$("span#invision").show();
 				$("span#invision").animate({ top: '+=100vh' }, 500);
 				
@@ -45,7 +46,14 @@ window.onload = function() {
 				$("span#invision").hide();
 			}
 		});
-
+		let m = $("a.navigation");
+		
+			m.click(function(){
+				if(score==false){
+			$("span#invision").animate({ top: '-=100vh' }, 500);
+			$("span#invision").hide();
+			score = !score;}
+		});
 		$('#menu-button-container').append(menuButton);
 	}
 	createMenuButton();
