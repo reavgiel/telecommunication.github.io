@@ -34,6 +34,7 @@ html,body
 	font-family: "Fira Sans", sans-serif;
 	height: 100%;
 	width: 100vw;
+	min-width: 1280px;
 }
 
 .container
