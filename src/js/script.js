@@ -1,4 +1,4 @@
-window.onload = function() {
+
 	$(document).ready(function() {
 		let igLink = $('<a href="https://www.instagram.com/" target="_blank" id="inst"></a>');
 		let ytLink = $('<a href="https://www.youtube.com/" target="_blank" id="yout"></a>');
@@ -65,7 +65,4 @@ window.onload = function() {
 	}
 	createMenuButton();
 	$("span#invision").animate({ top: '-=100vh' }, 5);
-//	$(window).scroll(function(){
-//		$(".head").css("top",$(this).scrollTop() + "px");
-//	});
-  };
+

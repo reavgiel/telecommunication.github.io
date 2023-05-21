@@ -1,3 +1,4 @@
+/*//////////////////////Онулення браузерних стилів та підгрузка шрифту////////////////////////*/
 @import url("https://fonts.googleapis.com/css?family=Fira+Sans:400,500,800&display=swap");
 * {
   margin: 0;
@@ -19,6 +20,7 @@ h1,h2,h3,h4,h5,h6
 	font-weight:inherit;
 	font-size:inherit;
 }
+/*////////////////////Тіло сайту, блоки, контейнер//////////////////////////*/
 .wrapper
 {
 	overflow: hidden;
@@ -37,12 +39,7 @@ body
 	max-width: 1280px;
 	margin: 0px auto;
 }
-p,li
-{
-	font-weight: 400;
-	text-indent: 2em;
-	margin-bottom: 5px;
-}
+
 .block
 {
 	height:max-content;
@@ -85,16 +82,23 @@ p,li
 	padding-top: 360px;
 	padding-bottom: 100px;
 }
-div#shadow
+/*///////////////////затінення для блоку, та просто затінення  //////////////////////*/
+div.shadow
 {
 	height:max-content;
 	width: 100%;
 }
-#shadow
+.shadow
 {
 	background-color: rgb(20 16 16 / 50%);
 }
-
+/*////////////////////////////////Текст: блоки, абзац, список, заголовок//////////////////////////////*/
+p,li
+{
+	font-weight: 400;
+	text-indent: 2em;
+	margin-bottom: 5px;
+}
 .text-block
 {	
 	width: 60%;
@@ -124,6 +128,7 @@ p.aling-center
 	font-weight: 800;
 	padding-bottom: 30px;
 }
+/*/////////////////////Другий блок//////////////////////////*/
 .block_img
 {
 	width: 40%;
@@ -459,6 +464,7 @@ p.aling-center
     width: 30px;
   }
 }
+/*/////////////////////////footer//////////////////////*/
  footer 
  {
 	background-color: #0a0a0a;
@@ -479,74 +485,7 @@ footer a
 	color: #fff7f7e3;
 	text-decoration: none;
 }
-@media screen and (max-width: 768px) and (min-width: 301px) {
-	.container{
-		max-width: 100%;
-	}
-	body,.blog-slider__text{
-		font-size: 12px;
-	}
-	h1, h1.header-text, h2, h3{
-		font-size: 20px;
-	}
-	.block_line {
-		display: flex;
-		flex-wrap: wrap;
-		flex-direction: column-reverse;
-		align-content: center;
-	}
-	.block_img
-	{
-		height: max-content;
-		width: 100%;
-	}
-	.block_img img
-	{
-		height: max-content;
-		width: max-content;
-	}
-  }
-@media screen and (max-width: 600px){
-	.container_2{
-		justify-content: center;
-	}
-}
-@media screen and (max-width: 300px){
-	.container{
-		max-width: 100%;
-	}
-	body,.blog-slider__text{
-		font-size: 10px;
-	}
-	h1,h1.header-text, h2, h3{
-		font-size: 18px;
-	}
-	.block_line {
-		display: flex;
-		flex-wrap: wrap;
-		flex-direction: column-reverse;
-		align-content: center;
-	}
-	.block_img
-	{
-		height: max-content;
-		width: 100%;
-	}
-	.block_img img
-	{
-		height: max-content;
-		width: max-content;
-	}
-}
-@media screen and (max-width: 1280px){
-	a.header__link{
-		font-size: 16px;
-	}
-	.header__list li{
-		text-indent: 0;
-		margin: 0 0 0 15px;
-	}
-}
+
 /*////////////////////Header///////////////////////////*/
 .header__logo img
 {
@@ -686,5 +625,147 @@ div#social-icons
 	}
 	body.lock{
 		overflow: hidden;
+	}
+}
+/*/////////////////////////Адаптація сторінки//////////////////////*/
+@media screen and (max-width: 768px) and (min-width: 301px) {
+	.container{
+		max-width: 100%;
+	}
+	body,.blog-slider__text{
+		font-size: 12px;
+	}
+	h1, h1.header-text, h2, h3{
+		font-size: 20px;
+	}
+	.block_line {
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: column-reverse;
+		align-content: center;
+	}
+	.block_img
+	{
+		height: max-content;
+		width: 100%;
+	}
+	.block_img img
+	{
+		height: max-content;
+		width: max-content;
+	}
+  }
+@media screen and (max-width: 600px){
+	.container_2{
+		justify-content: center;
+	}
+}
+@media screen and (max-width: 300px){
+	.container{
+		max-width: 100%;
+	}
+	body,.blog-slider__text{
+		font-size: 10px;
+	}
+	h1,h1.header-text, h2, h3{
+		font-size: 18px;
+	}
+	.block_line {
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: column-reverse;
+		align-content: center;
+	}
+	.block_img
+	{
+		height: max-content;
+		width: 100%;
+	}
+	.block_img img
+	{
+		height: max-content;
+		width: max-content;
+	}
+}
+@media screen and (max-width: 1280px){
+	a.header__link{
+		font-size: 16px;
+	}
+	.header__list li{
+		text-indent: 0;
+		margin: 0 0 0 15px;
+	}
+}
+@media screen and (min-width: 1900px){
+	.container{
+		max-width: 1900px;
+	}
+	.container_2{
+		max-width: 1900px;
+	}
+	body{
+		font-size: 26px;
+	}
+	.blog-slider__text{
+		font-size: 26px;
+	}
+	h2{
+		font-size:36px;
+	}
+	.blog-slider__title{
+		font-size:36px;
+	}
+	.container_2 .card .face {
+		width: 600px;
+		height: 800px;
+	}
+	.container_2 .card .face.face2 {
+		transform: translateY(-400px);
+	}
+	
+}
+@media screen and (min-width: 3800px){
+	.header__logo{
+		flex: 0 0 180px;
+	}
+	.container{
+		max-width: 3800px;
+	}
+	.container_2{
+		max-width: 3800px;
+	}
+	body{
+		font-size: 48px;
+	}
+	.blog-slider__text{
+		font-size: 48px;
+	}
+	h2,h1.header-text, .header__list li a{
+		font-size:64px;
+	}
+	.header__list li a{
+		margin-left: 150px;
+	}
+	div#social-icons a i{
+		font-size: 100px;
+	}
+	div#social-icons {
+		display: block;
+	}
+	.blog-slider__title{
+		font-size:64px;
+	}
+	.container_2 .card .face {
+		width: 1260px;
+		height: 1300px;
+	}
+	.container_2 .card .face.face2 {
+		transform: translateY(-900px);
+	}
+	.header:before,.header__body{
+		height: 200px;
+	}
+	p,li, .content p{
+		margin-bottom: 40px;
 	}
 }
