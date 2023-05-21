@@ -13,6 +13,13 @@ window.onload = function() {
 		$('#social-icons').append(ytLink);
 		$('#social-icons').append(fbLink);
 	  });
+	
+	$(document).ready(function(){
+		$('.scroll__element').click(function(event){
+			$('body').toggleClass('lock');
+			$('.header__menu__button,.header__menu').toggleClass('active');
+		});
+		});
 	var swiper = new Swiper('.blog-slider', {
 		spaceBetween: 30,
 		effect: 'fade',
