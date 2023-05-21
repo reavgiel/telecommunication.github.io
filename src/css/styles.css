@@ -549,6 +549,9 @@ div#social-icons
 	display: none;
 }
 @media screen and (max-width: 792px){
+	.header__list li a{
+		margin-left: 4vw;
+	}
 	.header__menu__button{
 		display: block;
 		position: relative;
@@ -687,7 +690,7 @@ div#social-icons
 		width: max-content;
 	}
 }
-@media screen and (max-width: 1280px){
+@media screen and (min-width: 1280px){
 	a.header__link{
 		font-size: 16px;
 	}
@@ -722,7 +725,9 @@ div#social-icons
 	.container_2 .card .face.face2 {
 		transform: translateY(-400px);
 	}
-	
+	.header__list li a{
+		margin-left: 20px;
+	}
 }
 @media screen and (min-width: 3800px){
 	.header__logo{
