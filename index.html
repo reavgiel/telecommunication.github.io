@@ -49,7 +49,9 @@
         const newFrame = document.createElement('div');
         newFrame.className = 'frame';
         newFrame.appendChild(container);
-        document.body.appendChild(newFrame)+ "<p> Glava " + index +"</p>";
+        document.body.appendChild(newFrame);
+        const newElement = document.createElement('p');
+        newElement.innerHTML = "<p> Glava " + index +"</p>";
         console.log(index);
       }
     };
