@@ -46,7 +46,7 @@
         const parser = new DOMParser();
         const htmlDoc = parser.parseFromString(xhr.responseText, 'text/html');
         const container = htmlDoc.querySelector('.reader-container');
-        const newFrame = document.createElement('div');
+        const newFrame = document.createElement('div')+ "<p> Glava " + index +"</p>";
         newFrame.className = 'frame';
         newFrame.appendChild(container);
         document.body.appendChild(newFrame);
